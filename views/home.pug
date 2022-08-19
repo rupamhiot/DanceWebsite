@@ -1,0 +1,44 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+    style
+        include ../static/style.css
+
+block content
+    section#introSection
+        div  Welcome to Our Dance Academy
+        div.small  Forget your troubles and dance!   
+    section#missionSection 
+        h2 Lern A Variety of Dance Style 
+        div.card
+            h3 International Dance
+            div.card-img
+                img(src="/static/image/international.png")
+            div.card-content 
+                //- p Hello
+        div.card
+            h3 Classical Dance 
+            div.card-img
+                img(src="/static/image/clasical.png")
+            div.card-content 
+                  //- p Hello
+             
+        div.card
+            h3  Salsa Dance  
+
+            div.card-img
+               img(src="/static/image/salsa.png")
+            div.card-content 
+                    //-  p hi       
+    section#sponsorSection 
+        h2 Our Sponsors
+        div#sponsors
+            img(src="/static/image/hp.png", alt="sponser Image", class ="spImage")
+            img(src="/static/image/apple1.png", alt="sponser Image", class ="spImage")
+            img(src="/static/image/google1.png", alt="sponser Image", class ="spImage")
+            img(src="/static/image/microsoft_PNG14.png", alt="sponser Image", class ="spImage")
+    section#footer
+         | Copyright © 2022 NationalDanceAcademy All rights reserved
